@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    background: #ffffff;
+    line-height: 1.6;
+    height: 100vh;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background: rgba(0,0,0,0.7);
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 1rem;
+    padding: 1rem;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f4f4f4;
+}
+
+.navbar ul li a:hover {
+    color: skyblue
+}
+
+.border {
+    width: 100%;
+    background: rgb(8, 7, 8, 0.9);
+    color: #333f33;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    height: max-content;
+}
+
+.border h1{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.border .box2 {
+    position: relative;
+    width: 50%;
+    height: max-content;
+    border-radius: 10px;
+    background: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+}
+.box .sns {
+    display: flex;
+    justify-content: center;
+}
+.box .sns img {
+    height: 100px;
+    padding: 10px;
+}
+
+.border .box2 img {
+    justify-content: center;
+    max-height: 100px;
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+    position: fixed;
+    top: 60px;
+    z-index: 1;
+}
+
+.progress-bar {
+    background-color: #74F2CE;
+    height: 8px;
+    width: 0%;
+    z-index: 1;
+}
+
+.box {
+    position: relative;
+    max-width: 900px;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.box img {
+    height: 500px;
+    width: auto;
+}
+
+
+section {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100vh;
+}
+
+section h1 {
+    font-size: 3vw;
+    text-align: center;
+}
+
+section p {
+    font-size: 1.3vw;
+}
+
+section#home {
+    background: url('images/street.jpg') no-repeat center center/ cover;
+    color: #f4f4f4;
+}
+
+section#home .box {
+    text-shadow: 2px 2px #393E41;
+}
+
+section#about {
+    background: url('images/street1.jpg') no-repeat center center/ cover;
+}
+
+section#projects {
+    background: url('images/city.jpg') no-repeat center center/ cover;
+    flex-direction: column;
+}
